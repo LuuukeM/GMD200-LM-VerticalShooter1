@@ -5,24 +5,43 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour
 {
 
-    public GameObject bulletPrefab;
+    public Rigidbody2D bulletPrefab;
     public float bulletSpeed = 10.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       // StartCoroutine(Co_ShootRoutine());
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) 
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            //shoot bullet
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
-            bulletRB.velocity = transform.up * bulletSpeed;
+            Shoot();
         }
     }
+    // Update is called once per frame
+    private void Shoot()
+    {
+            //shoot bullet
+            Rigidbody2D bulletRB = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            bulletRB.velocity = -transform.up * bulletSpeed;
+            Destroy(bulletRB.gameObject, 2.0f);
+    }
+
+    /*IEnumerator Co_ShootRoutine()
+    {
+        while (true) 
+        {
+            yield return new WaitForSeconds(0.2f);
+            Shoot();
+            yield return new WaitForSeconds(0.2f);
+            Shoot();
+            yield return new WaitForSeconds(0.8f);
+            Shoot();
+        }
+        
+    } */
 }
