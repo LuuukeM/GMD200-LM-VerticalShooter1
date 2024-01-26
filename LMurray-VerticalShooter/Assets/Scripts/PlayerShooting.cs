@@ -28,7 +28,7 @@ public class PlayerShooting : MonoBehaviour
             //shoot bullet
             Rigidbody2D bulletRB = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             bulletRB.velocity = -transform.up * bulletSpeed;
-            Destroy(bulletRB.gameObject, 2.0f);
+            Destroy(bulletRB.gameObject, 4.0f);
     }
 
     /*IEnumerator Co_ShootRoutine()

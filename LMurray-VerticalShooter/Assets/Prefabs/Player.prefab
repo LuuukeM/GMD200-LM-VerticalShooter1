@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8855250173355624947}
   - component: {fileID: 6021109444135354477}
   - component: {fileID: 1614843229708555047}
+  - component: {fileID: 1188059926596699531}
+  - component: {fileID: -720097920026203951}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -74,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 2ac67462b35b4e044a0b9f743ce4c597, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.2957449, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 21b11b5ba1749ff45b5c85012972ac3d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.6, y: 1.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -98,4 +100,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2924170775157842893, guid: 54b98a103081b5a49a2dc9ab4d201a82, type: 3}
-  bulletSpeed: 10
+  bulletSpeed: 7
+--- !u!50 &1188059926596699531
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682675906039937581}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-720097920026203951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682675906039937581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78481db703eb53f4ba496fad21926055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: {x: 6, y: 4}
+  boundsLeft: -5
+  boundsRight: 5
+  boundsUp: -2
+  boundsDown: -15
