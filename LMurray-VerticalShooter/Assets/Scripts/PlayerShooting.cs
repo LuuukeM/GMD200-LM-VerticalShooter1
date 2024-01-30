@@ -19,7 +19,7 @@ public class PlayerShooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Shoot();
+            Shoot(); 
         }
     }
     // Update is called once per frame

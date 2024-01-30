@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: {x: 6, y: 4}
-  boundsLeft: -5
-  boundsRight: 5
+  boundsLeft: -4
+  boundsRight: 4
   boundsUp: -2
   boundsDown: -15
