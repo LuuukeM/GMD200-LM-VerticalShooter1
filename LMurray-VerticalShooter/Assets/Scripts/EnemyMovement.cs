@@ -20,7 +20,7 @@ public class joncode : MonoBehaviour
     void Update()
     {
 
-        transform.position += new Vector3(0, 0.004f, 0);
+        transform.position += new Vector3(0, 0.001f, 0);
         checkForDriving();
 
     }

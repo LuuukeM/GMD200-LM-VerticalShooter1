@@ -75,8 +75,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 21b11b5ba1749ff45b5c85012972ac3d, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 93151139c24478f448daf82225f31742, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2924170775157842893, guid: 54b98a103081b5a49a2dc9ab4d201a82, type: 3}
-  bulletSpeed: 7
+  bulletSpeed: 4
 --- !u!50 &1188059926596699531
 Rigidbody2D:
   serializedVersion: 4
@@ -116,7 +116,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: {x: 6, y: 4}
-  boundsLeft: -4
-  boundsRight: 4
-  boundsUp: -2
-  boundsDown: -15
+  boundsLeft: -2
+  boundsRight: 2
+  boundsUp: 5.25
+  boundsDown: 0
