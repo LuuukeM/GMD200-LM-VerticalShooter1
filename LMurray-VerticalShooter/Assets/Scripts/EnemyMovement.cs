@@ -38,7 +38,7 @@ public class joncode : MonoBehaviour
         }
         else
         {
-            carX = Random.Range(-5, 5);
+            carX = Random.Range(-5, 6);
             rb.AddForce(new Vector2(carX, 0) * speed);
         }
     }
