@@ -8,11 +8,10 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private float respawnY = -6;
     private float _respawnX;
-    private Rigidbody2D _rigidbody2D;
 
     private void Awake()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>(); 
+
     }
 
     void Start()
@@ -25,6 +24,5 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         gameObject.SetActive(true);
-        _rigidbody2D.velocity = Vector2.zero;
     }
 }
