@@ -7,6 +7,8 @@ public class PlayerShooting : MonoBehaviour
 
     public Rigidbody2D bulletPrefab;
     public float bulletSpeed = 10.0f;
+    public float fireRate = 0.7f;
+    float _lastShootTime;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +19,7 @@ public class PlayerShooting : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > _lastShootTime + fireRate)
         {
             Shoot(); 
         }
@@ -25,10 +27,10 @@ public class PlayerShooting : MonoBehaviour
     // Update is called once per frame
     private void Shoot()
     {
-            //shoot bullet
-            Rigidbody2D bulletRB = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            bulletRB.velocity = -transform.up * bulletSpeed;
-            Destroy(bulletRB.gameObject, 4.0f);
+        Rigidbody2D bulletRB = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        bulletRB.velocity = -transform.up * bulletSpeed;
+        Destroy(bulletRB.gameObject, 4.0f);
+        _lastShootTime = Time.time;
     }
 
     /*IEnumerator Co_ShootRoutine()

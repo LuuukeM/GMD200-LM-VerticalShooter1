@@ -5,8 +5,8 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Enemy : MonoBehaviour
-{ 
-
+{
+    [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private float respawnY = -6;
     private float _respawnX;
 
@@ -31,7 +31,21 @@ public class Enemy : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("down");
+        Despawn();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Bullet"))  
+        {
+            Despawn();
+        }
+    }
+
+    private void Despawn()
+    {
         gameObject.SetActive(false);
-        GameManager.instance.UnlistEnemy(gameObject);
+        GameManager.Instance.UnlistEnemy(gameObject);
+        Instantiate(explosionPrefab, transform.position, transform.rotation);
     }
 }

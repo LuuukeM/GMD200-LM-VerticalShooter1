@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ea330e58db9e8439c03a9ff1e6def4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 3305460630674998044, guid: f980f6843bf56584ca3b9739b5d38aa1, type: 3}
   respawnY: -7
 --- !u!114 &4478049976955649022
 MonoBehaviour:
