@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Bullet
   - BulletDeleteBox
+  - RacersLeftText
+  - LoseBox
   layers:
   - Default
   - TransparentFX

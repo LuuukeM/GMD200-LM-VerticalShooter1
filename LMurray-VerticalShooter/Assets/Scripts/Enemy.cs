@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
+using UnityEditor.SearchService;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private float respawnY = -6;
+    [SerializeField] int sceneID;
     private float _respawnX;
+    RacersLeft racersLeft;
 
     void Start()
     {
+        racersLeft = GameObject.FindGameObjectWithTag("RacersLeftText").GetComponent<RacersLeft>();
         _respawnX = transform.position.x;
-
     }
 
     // Update is called once per frame
@@ -30,7 +34,6 @@ public class Enemy : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("down");
         Despawn();
     }
 
@@ -40,10 +43,16 @@ public class Enemy : MonoBehaviour
         {
             Despawn();
         }
+
+        if (other.gameObject.CompareTag("LoseBox"))
+        {
+            SceneManager.LoadScene(sceneID);
+        }
     }
 
     private void Despawn()
     {
+        racersLeft.EnemyDestroyed();
         gameObject.SetActive(false);
         GameManager.Instance.UnlistEnemy(gameObject);
         Instantiate(explosionPrefab, transform.position, transform.rotation);

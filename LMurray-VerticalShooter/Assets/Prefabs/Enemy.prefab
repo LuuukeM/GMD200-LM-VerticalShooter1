@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 644828916660642994}
   - component: {fileID: 9159120996771334139}
   - component: {fileID: 5682210712336422141}
-  - component: {fileID: 4478049976955649022}
   - component: {fileID: 3596388134689989963}
   m_Layer: 0
   m_Name: Enemy
@@ -175,18 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 3305460630674998044, guid: f980f6843bf56584ca3b9739b5d38aa1, type: 3}
   respawnY: -7
---- !u!114 &4478049976955649022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5936172415618822450}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d578770707f797f419e30b2fed20142e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  sceneID: 3
 --- !u!114 &3596388134689989963
 MonoBehaviour:
   m_ObjectHideFlags: 0
