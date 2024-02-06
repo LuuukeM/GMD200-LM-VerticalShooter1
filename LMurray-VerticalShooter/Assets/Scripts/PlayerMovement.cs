@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        Screen.SetResolution(1920, 1080, true);
         _rb = GetComponent<Rigidbody2D>();
     }
 

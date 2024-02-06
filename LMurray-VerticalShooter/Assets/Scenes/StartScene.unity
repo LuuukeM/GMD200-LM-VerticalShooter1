@@ -281,26 +281,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2715191756930549222, guid: 882af43640ef53545bc42653093a183b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 833.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 2715191756930549222, guid: 882af43640ef53545bc42653093a183b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1666.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 2715191756930549222, guid: 882af43640ef53545bc42653093a183b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2715191756930549222, guid: 882af43640ef53545bc42653093a183b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4818175110310842487, guid: 882af43640ef53545bc42653093a183b, type: 3}
-      propertyPath: _y
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 6505743492544539440, guid: 882af43640ef53545bc42653093a183b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -381,6 +361,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7257182127529894844, guid: 882af43640ef53545bc42653093a183b, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257182127529894844, guid: 882af43640ef53545bc42653093a183b, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257182127529894844, guid: 882af43640ef53545bc42653093a183b, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257182127529894844, guid: 882af43640ef53545bc42653093a183b, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 800
+      objectReference: {fileID: 0}
     - target: {fileID: 7542481742963430816, guid: 882af43640ef53545bc42653093a183b, type: 3}
       propertyPath: m_Camera
       value: 
@@ -426,8 +422,8 @@ Camera:
   m_GameObject: {fileID: 212686400}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -806,9 +802,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765483389}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0159, y: 1.888, z: 0}
-  m_LocalScale: {x: 0.7452501, y: 0.7452501, z: 0.7452501}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0023, y: 1.9119413, z: 0}
+  m_LocalScale: {x: 0.7380808, y: 0.735696, z: 0.7452501}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1688,7 +1684,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -1997,9 +1993,9 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 765483391}
   - {fileID: 212686403}
   - {fileID: 291902496}
   - {fileID: 1615613396}
+  - {fileID: 765483391}
   - {fileID: 152552965}
   - {fileID: 2094742436}
