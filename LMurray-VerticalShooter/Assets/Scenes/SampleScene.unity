@@ -770,7 +770,7 @@ Transform:
   m_GameObject: {fileID: 1010780176}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.62, y: -5.822, z: 0}
+  m_LocalPosition: {x: 2.73, y: -5.822, z: 0}
   m_LocalScale: {x: 0.383, y: 25.534576, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -828,7 +828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   racersLeft: 40
   racersLeftText: {fileID: 1255666907}
-  sceneID: 3
+  sceneID: 2
 --- !u!114 &1255666907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,8 +876,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1542,6 +1542,18 @@ PrefabInstance:
       value: 1579.25
       objectReference: {fileID: 0}
     - target: {fileID: 5206297014575997265, guid: ef1e74eb78063e44b9ef42dcd84eb753, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.77706575
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206297014575997265, guid: ef1e74eb78063e44b9ef42dcd84eb753, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.77706575
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206297014575997265, guid: ef1e74eb78063e44b9ef42dcd84eb753, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.77706575
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206297014575997265, guid: ef1e74eb78063e44b9ef42dcd84eb753, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 11
       objectReference: {fileID: 0}
@@ -1686,6 +1698,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
+  - {fileID: 1736280853683783039}
   - {fileID: 1393110753309240081}
   - {fileID: 2007239599}
   - {fileID: 6027902582189834791}
@@ -1694,7 +1707,6 @@ SceneRoots:
   - {fileID: 1356981742}
   - {fileID: 1010780179}
   - {fileID: 1574833289}
-  - {fileID: 1736280853683783039}
   - {fileID: 304233314}
   - {fileID: 2072778060}
   - {fileID: 747675041}
